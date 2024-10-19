@@ -141,10 +141,10 @@ const LandingPage = () => {
           className="text-center"
         >
           <h1 className="text-5xl tracking-tight font-extrabold text-gray-900 sm:text-6xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">
-            <span className="block">AI Content Generator</span>
+            <span className="block">Generator Genie</span>
           </h1>
           <p className="mt-3 max-w-md mx-auto text-xl text-gray-600 sm:text-2xl md:mt-5 md:max-w-3xl">
-            Revolutionize your content creation with our AI-powered app, delivering engaging and high-quality text in seconds.
+          Create captivating, high-quality text effortlessly with our AI-driven platform—saving you time and unlocking your creative potential in seconds.
           </p>
           <motion.div 
             className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8"
@@ -153,7 +153,7 @@ const LandingPage = () => {
           >
             {isSignedIn ? (
               <Link href="/dashboard" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 md:py-4 md:text-lg md:px-10 transition duration-300 shadow-lg hover:shadow-xl">
-                Go to Dashboard
+                Explore the Dashboard
               </Link>
             ) : (
               <SignInButton mode="modal">
@@ -168,10 +168,10 @@ const LandingPage = () => {
         <div className="mt-16">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { icon: "📄", title: "20+ templates", description: "Responsive, and mobile-first project on the web" },
-              { icon: "🔧", title: "Customizable", description: "Components are easily customized and extendable" },
-              { icon: "📚", title: "Free to Use", description: "Every component and plugin is well documented" },
-              { icon: "🛠", title: "24/7 Support", description: "Contact us 24 hours a day, 7 days a week" },
+              { icon: "📄", title: "Diverse Templates", description: "Choose from 20+ ready-to-use templates designed to meet your unique needs, from blogs to business content." },
+              { icon: "🔧", title: "Fully Customizable", description: "Tailor every element with ease-whether text, style, or structure-so your content feels just right." },
+              { icon: "📚", title: "Free and Accessible", description: "Enjoy seamless access to well-documented tools without any cost barriers." },
+              { icon: "🛠", title: "Always Here to Help", description: "Round-the-clock support, ensuring your creative flow never hits a roadblock." },
             ].map((feature, index) => (
               <motion.div 
                 key={index}
